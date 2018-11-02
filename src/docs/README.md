@@ -15,7 +15,7 @@ formats. With this project we're trying to collect them and make them available
 from a single place, to make it easier for us to maintain and for you to
 find. 
 
-Here are the dems we've collected so far:
+Here are the demos we've collected so far:
 
 - [FXBeanInfo JavaFX Embedded Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-embedded)
 - [FXBeanInfo HTML Ui Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo)
