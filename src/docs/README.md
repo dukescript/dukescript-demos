@@ -5,8 +5,10 @@ This will update the README.md in root dir.-->
 
 [![Travis Status](https://travis-ci.org/dukescript/dukescript-demos.svg?branch=master)](https://travis-ci.org/dukescript/dukescript-demos)
 
-This project contains a collection of demos for using DukeScript. In the past
-we've been developing lots of demos to teach the use of the core technology,
+This project contains a collection of demos for using [DukeScript](https://dukescript.com).
+In case you don't know Dukescript yet: It's a framework which allows you to run the same Java application everywhere,
+in the Browser, on your desktop, on iOS or Android, or even as a plugin for your IDE.
+In the past we've been developing lots of demos to teach the use of the core technology,
 show useful tricks and workarounds, or demonstrate how to use the many libraries. 
 
 
@@ -18,6 +20,7 @@ Here are the demos we've collected so far:
 
 - [FXBeanInfo JavaFX Embedded Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-embedded)
 - [FXBeanInfo HTML Ui Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo)
+- [Fifteen Puzzle Game](https://github.com/dukescript/dukescript-demos/tree/master/fifteen)
 
 Currently these versions of dependencies are used:
 
