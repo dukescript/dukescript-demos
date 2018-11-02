@@ -1,4 +1,4 @@
-[//]: # Make sure you edit the right README.md or your changes are lost. The original (template) file is in /src/docs/ directory
+[//]: # (Make sure you edit the right README.md or your changes are lost. The original (template) file is in /src/docs/ directory)
 # DukeScript Demos
 
 [![Travis Status](https://travis-ci.org/dukescript/dukescript-demos.svg?branch=master)](https://travis-ci.org/dukescript/dukescript-demos)
