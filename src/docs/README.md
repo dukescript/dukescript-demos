@@ -10,8 +10,7 @@ we've been developing lots of demos to teach the use of the core technology,
 show useful tricks and workarounds, or demonstrate how to use the many libraries. 
 
 
-These demo projects were distributed on lots of different places, in different
-formats. With this project we're trying to collect them and make them available 
+With this project we've started to collect them and make them available 
 from a single place, to make it easier for us to maintain and for you to
 find. 
 
@@ -26,10 +25,7 @@ Currently these versions of dependencies are used:
 - org.apidesign.bck2brwsr:emul : ${bck2brwsr.version}
 - com.dukescript.api:javafx.beaninfo : ${javafx.beaninfo.version}
 
-
-
-We hope to make this a useful resource for all of us.
-
+Enjoy exploring DukeScript!
 
 The demos here are meant for educational purposes only.
 
