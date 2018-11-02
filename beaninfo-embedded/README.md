@@ -80,6 +80,6 @@ public class HTMLController implements FXBeanInfo.Provider {
 There's a related demo
 using plain DukeScript with FXBeanInfo:
 
-https://github.com/dukescript/dukescript-demos/beaninfo-demo
+https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo
 
 

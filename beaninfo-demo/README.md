@@ -17,6 +17,6 @@ about the library:
 In this demo we use a plain HTML UI. There's a related demo which shows how to 
 mix JavaFX and DukeScript based Views:
 
-https://github.com/dukescript/dukescript-demos/beaninfo-embedded
+https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-embedded
 
 
