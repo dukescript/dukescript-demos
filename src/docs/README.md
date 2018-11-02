@@ -24,6 +24,12 @@ Currently these versions of dependencies are used:
 - org.netbeans.html:net.java.html : ${net.java.html.version}
 - org.apidesign.bck2brwsr:emul : ${bck2brwsr.version}
 - com.dukescript.api:javafx.beaninfo : ${javafx.beaninfo.version}
+- com.dukescript.api:junit-browser-runner : ${junit.browser.version}
+- com.dukescript.canvas:canvas-api : ${canvas.version}
+- com.dukescript.api:charts : ${charts.version}
+- com.dukescript.api:leaflet4j : ${leaflet4j.version}
+- com.dukescript.presenters (android, browser, ios, etc.) : ${presenters.version}
+- com.dukescript.api:javafx.beaninfo  : ${javafx.beaninfo.version}
 
 Enjoy exploring DukeScript!
 
