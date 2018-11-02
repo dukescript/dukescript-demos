@@ -18,7 +18,6 @@ Here are the dems we've collected so far:
 - [FXBeanInfo JavaFX Embedded Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-embedded)
 - [FXBeanInfo HTML Ui Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo)
 
-
 Currently these versions of dependencies are used:
 
 - org.netbeans.html:net.java.html : ${net.java.html.version}
