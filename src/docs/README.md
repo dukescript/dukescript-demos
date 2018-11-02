@@ -11,10 +11,15 @@ show useful tricks and workarounds, or demonstrate how to use the many libraries
 These demo projects were distributed on lots of different places, in different
 formats. With this project we're trying to collect them and make them available 
 from a single place, to make it easier for us to maintain and for you to
-find.
+find. 
+
+Here are the dems we've collected so far:
+
+- [FXBeanInfo JavaFX Embedded Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-embedded)
+- [FXBeanInfo HTML Ui Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo)
 
 
-Currently these versions are used:
+Currently these versions of dependencies are used:
 
 - org.netbeans.html:net.java.html : ${net.java.html.version}
 - org.apidesign.bck2brwsr:emul : ${bck2brwsr.version}
