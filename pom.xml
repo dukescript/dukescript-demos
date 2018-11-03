@@ -82,7 +82,8 @@ THE SOFTWARE.
         <module>beaninfo-embedded</module>
         <module>beaninfo-demo</module>
         <module>fifteen</module>
-    </modules>
+    <module>crud</module>
+  </modules>
     <build>
         <plugins>
             <plugin>
