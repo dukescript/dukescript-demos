@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
   #%L
-  crud - a library from the "DukeScript" project.
+  dukescript-demos - a library from the "DukeScript" project.
   %%
   Copyright (C) 2018 Dukehoff GmbH
   %%
@@ -31,16 +31,16 @@
 
     <parent>
         <groupId>com.dukescript.demo</groupId>
-        <artifactId>crud-pom</artifactId>
+        <artifactId>twitter-pom</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     
     <groupId>com.dukescript.demo</groupId>
-    <artifactId>crud-android</artifactId>
+    <artifactId>twitter-android</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>apk</packaging>
 
-    <name>crud Client for Android</name>
+    <name>twitter Client for Android</name>
 
     <properties>
         <main.basedir>${project.parent.parent.basedir}</main.basedir>
@@ -187,7 +187,7 @@
     <dependencies>
         <dependency>
             <groupId>com.dukescript.demo</groupId>
-            <artifactId>crud</artifactId>
+            <artifactId>twitter</artifactId>
             <version>${project.version}</version>
             <exclusions>
                 <exclusion>

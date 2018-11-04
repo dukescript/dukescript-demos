@@ -1,0 +1,245 @@
+/*-
+ * #%L
+ * twitter - a library from the "DukeScript" project.
+ * %%
+ * Copyright (C) 2018 Dukehoff GmbH
+ * %%
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ * #L%
+ */
+/**
+ * The MIT License (MIT)
+ *
+ * Copyright (C) 2013 Anton Epple <anton.epple@eppleton.de>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+
+
+/*
+    Copied from knockout.js Twitter example:
+    http://knockoutjs.com/examples/twitter.html
+*/
+
+
+body {
+    font: normal 18px/1.5 "Helvetica Neue", sans-serif;
+    letter-spacing: 0.05em;
+    background: #EFF1F3;
+    color: #223843;
+    margin:0;
+    /*padding: 50px 0;*/
+}
+
+a{
+    color: #14213D;
+}
+
+.tr{
+    border-bottom: 1px #223843;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
+.flex-outer {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer > li > label + *{
+    flex: 1 0 220px;
+}
+
+.flex-outer li p {
+    margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+    padding: 15px;
+    border: none;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #223843;
+    color: #EFF1F3;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.configuration, .tweets, .tweets td { 
+    font-size: 13px; 
+}
+
+.liveExample{
+    height: 100vh;
+    margin-left: 50px;
+    width: 90%;
+/*    display: flex;
+    flex-wrap: nowrap;*/
+}
+
+.tweets{
+    flex-grow: 1;
+}
+
+.configuration {
+    font-weight: 100;
+    background: #223843;
+    width: 300px;
+    height: 100%;
+    padding-right: 50px;
+    position: fixed;
+    z-index: 100;
+    left: -300px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    color: #EFF1F3;
+}
+
+.configuration.hover {
+    transform: translate3d(+300px, 0, 0);
+    animation-timing-function: 1s ease-in;
+}
+
+.configuration .title {
+    color: #EFF1F3;
+    top: 50%;
+    position: absolute;
+    transform: rotate(270deg);
+    right: 5px;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.configuration .back{
+    background: #EFF1F3;
+    color: #223843;
+    height: 100%;
+    padding: 5px;
+}
+
+.configuration .nav {
+
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-weight: 100;
+}
+.configuration .nav li {
+    padding-bottom: 30px;
+    list-style-type: none;
+}
+.configuration .nav li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.configuration .nav li a:hover {
+    color: #aaa;
+}
+
+.tweet-list{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.tweet-list li{
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+  display: flex;
+}
+
+.tweet-list li .tweet-right{
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 5px;
+}
+
+img {
+    flex-shrink: 0;
+}
+
+

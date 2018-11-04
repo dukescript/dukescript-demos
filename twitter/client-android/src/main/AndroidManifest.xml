@@ -26,7 +26,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dukescript.demo.fifteen"
+    package="com.dukescript.demo.twitter"
     android:versionCode="1"
     android:versionName="1.0-SNAPSHOT" >
 
@@ -37,7 +37,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="fifteen"
+        android:label="twitter"
         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         <activity android:name="com.dukescript.presenters.Android"
                   android:configChanges="orientation|screenSize">
@@ -53,7 +53,7 @@
            - name of the initialization method in the given class
         -->
         <meta-data android:name="loadPage" android:value="file:///android_asset/pages/index.html" />
-        <meta-data android:name="loadClass" android:value="com.dukescript.demo.fifteen.AndroidMain" />
+        <meta-data android:name="loadClass" android:value="com.dukescript.demo.twitter.AndroidMain" />
         <meta-data android:name="invoke" android:value="main" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />

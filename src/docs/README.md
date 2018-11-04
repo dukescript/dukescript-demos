@@ -22,6 +22,7 @@ Here are the demos we've collected so far:
 - [FXBeanInfo HTML Ui Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo)
 - [CRUD Application](https://github.com/dukescript/dukescript-demos/tree/master/crud)
 - [Fifteen Puzzle Game](https://github.com/dukescript/dukescript-demos/tree/master/fifteen)
+- [Twitter Client](https://github.com/dukescript/dukescript-demos/tree/master/twitter)
 
 Currently these versions of dependencies are used:
 
@@ -34,6 +35,11 @@ Currently these versions of dependencies are used:
 - com.dukescript.api:leaflet4j : ${leaflet4j.version}
 - com.dukescript.presenters (android, browser, ios, etc.) : ${presenters.version}
 - com.dukescript.api:javafx.beaninfo  : ${javafx.beaninfo.version}
+- com.simpligility.maven.plugins:android-maven-plugin : ${platform.version}
+- Android Plugin version: ${android.plugin.version}
+- net.orfjackal.retrolambda:retrolambda-maven-plugin : ${retrolamda.version}
+- android.platform.version ${android.platform.version}
+- com.mobidevelop.robovm:robovm-rt : ${robovm.version}
 
 Enjoy exploring DukeScript!
 

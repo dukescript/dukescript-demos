@@ -74,6 +74,13 @@ THE SOFTWARE.
         <presenters.version>1.5.2</presenters.version>
         <enforcer.fail>false</enforcer.fail>
         <javafx.beaninfo.version>0.3</javafx.beaninfo.version>
+        <platform.version>4.1.1.4</platform.version>
+        <presenters.version>1.5.2</presenters.version>
+        <android.plugin.version>4.5.0</android.plugin.version>
+        <retrolamda.version>2.5.5</retrolamda.version>
+        <android.platform.version>26</android.platform.version>
+        <robovm.version>2.3.5</robovm.version>
+        <presenters.version>1.5.2</presenters.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <license>COPYING</license>
         <main.basedir>${project.basedir}</main.basedir>
@@ -83,6 +90,7 @@ THE SOFTWARE.
         <module>beaninfo-demo</module>
         <module>fifteen</module>
         <module>crud</module>
+        <module>twitter</module>
     </modules>
     <build>
         <plugins>
