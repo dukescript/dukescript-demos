@@ -9,9 +9,9 @@ use animations, how to create a responsive layout, and how to persist state.
 
 Most of it is explained in three blog posts:
 
-https://dukescript.com/update/2015/01/05/A-Little-Game.html
-https://dukescript.com/update/2015/01/06/A-Little-Game-2.html
-https://dukescript.com/update/2015/01/09/A-Little-Game-3.html
+- https://dukescript.com/update/2015/01/05/A-Little-Game.html
+- https://dukescript.com/update/2015/01/06/A-Little-Game-2.html
+- https://dukescript.com/update/2015/01/09/A-Little-Game-3.html
 
 The best thing about this game is, that it has a cheat mode, which allows you to
 drive everyone crazy. But you'll have to read the sources to find out :-).
