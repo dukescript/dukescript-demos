@@ -41,7 +41,6 @@
     <name>twitter</name>
     <modules>
         <module>client</module>
-        <module>client-web</module>
         <module>client-android</module>
         <module>client-ios</module>
         <module>js</module>
