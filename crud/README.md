@@ -7,6 +7,7 @@ This application demonstrates a couple of DukeScript features:
 * Use of Enums Types in models
 * Validation useing [@ComputedProperty](http://bits.netbeans.org/html4j/1.5.1/net/java/html/json/ComputedProperty.html)
 * Styling using a CSS framework ([Pure.css](https://purecss.io/))
+* Use of templates and the template binding
 
 The application consists of a couple of modules:
 

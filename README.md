@@ -20,6 +20,7 @@ Here are the demos we've collected so far:
 
 - [FXBeanInfo JavaFX Embedded Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-embedded)
 - [FXBeanInfo HTML Ui Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo)
+- [CRUD Application](https://github.com/dukescript/dukescript-demos/tree/master/crud)
 - [Fifteen Puzzle Game](https://github.com/dukescript/dukescript-demos/tree/master/fifteen)
 
 Currently these versions of dependencies are used:
@@ -35,7 +36,5 @@ Currently these versions of dependencies are used:
 - com.dukescript.api:javafx.beaninfo  : 0.3
 
 Enjoy exploring DukeScript!
-
-The demos here are meant for educational purposes only.
 
 
