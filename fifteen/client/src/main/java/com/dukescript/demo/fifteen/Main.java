@@ -59,7 +59,7 @@ public final class Main {
     public static void onPageLoad(PlatformServices services) throws Exception {
 
         Game game = initGame();
-        game.initServices(services);
+        
         String test = services.getPreferences("fifteen");
         if (test != null && !test.isEmpty() && !test.equals("undefined")) {
             Logger.getLogger(Main.class.getName()).log(Level.INFO, "Test:" + test + "<");
@@ -73,6 +73,7 @@ public final class Main {
             }
 
         }
+        game.initServices(services);
         Models.applyBindings(game, "game");
     }
 
