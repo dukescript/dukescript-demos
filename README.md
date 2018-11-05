@@ -14,7 +14,7 @@ show useful tricks and workarounds, or demonstrate how to use the many libraries
 
 With this project we've started to collect them and make them available 
 from a single place, to make it easier for us to maintain and for you to
-find. 
+find them. 
 
 Here are the demos we've collected so far:
 
