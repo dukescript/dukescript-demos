@@ -26,7 +26,7 @@ Here are the demos we've collected so far:
 
 Currently these versions of dependencies are used:
 
-- org.netbeans.html:net.java.html : 1.5.1
+- org.netbeans.html:net.java.html : 1.6
 - org.apidesign.bck2brwsr:emul : 0.30
 - com.dukescript.api:javafx.beaninfo : 0.3
 - com.dukescript.api:junit-browser-runner : 1.0
