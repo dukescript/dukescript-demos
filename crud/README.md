@@ -1,5 +1,7 @@
 # CRUD Demo
 
+<img src="crud.png" width="40%">
+
 This application demonstrates a couple of DukeScript features:
 
 * Reuse of Entity classes on client and server
