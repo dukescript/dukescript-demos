@@ -34,7 +34,9 @@
     </head>
     <body id="body">
         <div id="game" >
-
+            <div id="github-star">
+                <a class="github-button" href="https://github.com/dukescript/dukescript-demos" data-size="large" aria-label="Star dukescript/dukescript-demos on GitHub">Star</a>
+            </div>
             <!--<div  id="shuffle-button" data-bind="click: shuffle" >-->
             <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
@@ -46,11 +48,11 @@
             </svg>
 
             <svg id="shuffle-button" class="icon icon-spinner11" data-bind="click: shuffle"><use xlink:href="#icon-spinner11"></use></svg>
-
             <!--</div>-->
             <!--            <div data-bind="if: solved" >
                             <div id="twtbox"></div> 
                         </div>-->
+
             <div id="best" >
                 <span class="display-title" data-bind="text: cheatMode() ? 'BEST:' : 'BEST'"></span>
                 <span class="display-text" data-bind="text: best"></span>
@@ -65,11 +67,11 @@
                 <div class="tile with-image" data-bind="text: p, css: 'tile-position-'+ (y()+1) +'-'+(x()+1), attr: { id: 'tile-'+ p()}, click: $parent.move"></div>
                 <!-- /ko -->
             </div>
+            <div></div>
             <div id="hurray" class="animated" data-bind="text: 'Hooray!', visible:solved, css: {bounceInUp: solved, fadeOut: !solved}"></div>
-
         </div>
 
         <!-- ${browser.bootstrap} -->
-
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
     </body>
 </html>
