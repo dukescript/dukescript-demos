@@ -1,4 +1,4 @@
-#match 3 game
+## match 3 game
 
 This project demonstrates advanced techniques for writing applications in a declarative style.
 We're using CSS animations, custom bindings, Sprite animations, SCSS and more to
