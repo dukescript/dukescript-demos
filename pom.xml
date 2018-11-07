@@ -91,7 +91,8 @@ THE SOFTWARE.
         <module>fifteen</module>
         <module>crud</module>
         <module>twitter</module>
-    </modules>
+    <module>match3</module>
+  </modules>
     <build>
         <plugins>
             <plugin>
