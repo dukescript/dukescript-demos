@@ -140,7 +140,7 @@ body {
 *******************************************************************************/
 
 #shuffle-button{
-    color: #304860;
+    fill: #304860;
     vertical-align: middle;
     text-align: center;
 }
@@ -343,7 +343,6 @@ body {
     }
 
     #shuffle-button{
-        color: #304860;
         margin-left: 5vw;
         height: 12vw;
         width: 11vw;
