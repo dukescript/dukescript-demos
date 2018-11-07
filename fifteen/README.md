@@ -1,7 +1,7 @@
 This demo implements a sorting game. The aim is to sort 15 numbered tiles. 
 
 
-![alt screenshot of fifteen game](fifteen.png)
+<img src="fifteen.png" width="40%">
 You probably remember the mechanical version of this
 game from your childhood. Here's a description [in Wikipedia](http://en.wikipedia.org/wiki/15_puzzle).
 
