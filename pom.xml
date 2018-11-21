@@ -92,7 +92,8 @@ THE SOFTWARE.
         <module>crud</module>
         <module>twitter</module>
     <module>match3</module>
-  </modules>
+        <module>progressbar</module>
+    </modules>
     <build>
         <plugins>
             <plugin>

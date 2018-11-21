@@ -14,7 +14,7 @@ show useful tricks and workarounds, or demonstrate how to use the many libraries
 
 With this project we've started to collect them and make them available 
 from a single place, to make it easier for us to maintain and for you to
-find them. 
+find. 
 
 Here are the demos we've collected so far:
 
@@ -22,12 +22,13 @@ Here are the demos we've collected so far:
 - [FXBeanInfo HTML Ui Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo)
 - [CRUD Application](https://github.com/dukescript/dukescript-demos/tree/master/crud)
 - [Fifteen Puzzle Game](https://github.com/dukescript/dukescript-demos/tree/master/fifteen)
+- [Match 3 Game (Candy Crush)](https://github.com/dukescript/dukescript-demos/tree/master/match3)
 - [Twitter Client](https://github.com/dukescript/dukescript-demos/tree/master/twitter)
-- [Candy Crush Clone](https://github.com/dukescript/dukescript-demos/tree/master/match3)
+- [Progress Bar](https://github.com/dukescript/dukescript-demos/tree/master/progress)
 
 Currently these versions of dependencies are used:
 
-- org.netbeans.html:net.java.html : 1.6
+- org.netbeans.html:net.java.html : 1.5.1
 - org.apidesign.bck2brwsr:emul : 0.30
 - com.dukescript.api:javafx.beaninfo : 0.3
 - com.dukescript.api:junit-browser-runner : 1.0

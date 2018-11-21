@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
   #%L
-  match3 - a library from the "DukeScript" project.
+  dukescript-demos - a library from the "DukeScript" project.
   %%
   Copyright (C) 2018 Dukehoff GmbH
   %%
@@ -15,69 +15,42 @@
   The above copyright notice and this permission notice shall be included in
   all copies or substantial portions of the Software.
   
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-#L%
--->
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  #L%
+  -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.dukescript.demos</groupId>
-        <artifactId>match3-pom</artifactId>
+        <groupId>com.dukescript.demo</groupId>
+        <artifactId>progressbar-pom</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.dukescript.demos</groupId>
-    <artifactId>match3</artifactId>
+    <groupId>com.dukescript.demo</groupId>
+    <artifactId>progressbar</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
-    <name>match3 General Client Code</name>
+    <name>progressbar General Client Code</name>
 
     <properties>
         <main.basedir>${project.parent.parent.basedir}</main.basedir>
         <netbeans.compile.on.save>all</netbeans.compile.on.save>
-        <project.mainclass>com.dukescript.demos.match3.Main</project.mainclass>
+        <project.mainclass>com.dukescript.demo.progressbar.Main</project.mainclass>
         <exec.java.bin>${java.home}/bin/java</exec.java.bin>
         <exec.debug.arg>-Ddebug=false</exec.debug.arg>
     </properties>
     <build>
         <plugins>
-<!--            <plugin>
-                <groupId>nl.geodienstencentrum.maven</groupId>
-                <artifactId>sass-maven-plugin</artifactId>
-                <version>3.6.1</version>
-                <configuration>
-                    <resources>
-                        <resource>
-                            <source>
-                                <directory>${basedir}/src/main/webapp/scss/</directory>
-                                <includes>
-                                    <include>*.scss</include>
-                                </includes>
-                            </source>
-                            <destination>${project.build.directory}/classes</destination>
-                        </resource>
-                    </resources>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>update-stylesheets</goal>
-                        </goals>
-                        
-                        
-                    </execution>
-                </executions>
-            </plugin>-->
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
@@ -85,8 +58,8 @@ THE SOFTWARE.
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>com.dukescript.demos.match3</Export-Package>
-                        <Bundle-SymbolicName>com.dukescript.demos.match3</Bundle-SymbolicName>
+                        <Export-Package>com.dukescript.demo.progressbar</Export-Package>
+                        <Bundle-SymbolicName>com.dukescript.demo.progressbar</Bundle-SymbolicName>
                     </instructions>
                 </configuration>
             </plugin>
@@ -111,6 +84,21 @@ THE SOFTWARE.
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>${project.mainclass}</mainClass>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <useUniqueVersions>false</useUniqueVersions>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>2.2.1</version>
                 <executions>
@@ -129,12 +117,12 @@ THE SOFTWARE.
                 <version>1.2.1</version>
                 <configuration>
                     <executable>${exec.java.bin}</executable>
-                    <classpathScope>runtime</classpathScope>
+                    <classpathScope>test</classpathScope>
                     <arguments>
                         <argument>-classpath</argument>
                         <classpath/>
                         <argument>-javaagent:${project.build.directory}/springloaded.jar</argument>
-                        <argument>-Xverify:none</argument>
+                        <argument>-noverify</argument>
                         <argument>-Dbrowser.rootdir=${basedir}/src/main/webapp/</argument>
                         <argument>-Dnetbeans.inspect.port=${netbeans.inspect.port}</argument>
                         <argument>${exec.debug.arg}</argument>
@@ -149,7 +137,7 @@ THE SOFTWARE.
                 <executions>
                     <execution>
                         <id>copy</id>
-                        <phase>process-classes</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>copy</goal>
                         </goals>
@@ -217,11 +205,6 @@ THE SOFTWARE.
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>com.dukescript.demos</groupId>
-            <artifactId>match3-js</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.netbeans.html</groupId>
             <artifactId>net.java.html.boot.fx</artifactId>
             <version>${net.java.html.version}</version>
@@ -236,7 +219,9 @@ THE SOFTWARE.
         <dependency>
             <groupId>com.dukescript.api</groupId>
             <artifactId>junit-browser-runner</artifactId>
+            <version>${junit.browser.version}</version>
             <scope>test</scope>
+            <type>jar</type>
         </dependency>
 
     </dependencies>
