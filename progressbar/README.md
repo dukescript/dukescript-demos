@@ -1,6 +1,6 @@
 ## Progress Bar
 
-This project demonstrates how you can create a simple progressbar with DukeScript, 
+This project demonstrates how you can create a simple progressbar with DukeScript. Click the image below to see it in action: 
 
 [![Alt text](https://img.youtube.com/vi/IgzcuECER6I/0.jpg)](https://www.youtube.com/watch?v=IgzcuECER6I)
 
