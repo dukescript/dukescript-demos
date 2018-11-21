@@ -24,7 +24,7 @@ Here are the demos we've collected so far:
 - [Fifteen Puzzle Game](https://github.com/dukescript/dukescript-demos/tree/master/fifteen)
 - [Match 3 Game (Candy Crush)](https://github.com/dukescript/dukescript-demos/tree/master/match3)
 - [Twitter Client](https://github.com/dukescript/dukescript-demos/tree/master/twitter)
-- [Progress Bar](https://github.com/dukescript/dukescript-demos/tree/master/progress)
+- [Progress Bar](https://github.com/dukescript/dukescript-demos/tree/master/progressbar)
 
 Currently these versions of dependencies are used:
 
