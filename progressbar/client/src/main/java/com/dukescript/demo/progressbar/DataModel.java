@@ -58,6 +58,7 @@ final class DataModel {
             public void run() {
                 if (data.getPercentage() >= 99) {
                     timer.cancel();
+                    data.setTitle("Complete");
                 }
                 data.setPercentage(data.getPercentage() + 1.0);
             }

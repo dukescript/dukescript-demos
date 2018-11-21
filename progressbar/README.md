@@ -2,7 +2,7 @@
 
 This project demonstrates how you can create a simple progressbar with DukeScript, 
 
-<img src="progressbar.png" width="30%">
+[![Alt text](https://img.youtube.com/vi/IgzcuECER6I/0.jpg)](https://www.youtube.com/watch?v=IgzcuECER6I)
 
 
 If you're looking for a loading indicator or splash screen, see also: 
