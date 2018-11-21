@@ -23,16 +23,31 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
   #L%
-  -->
+-->
 
 <html>
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+        <style>
+            progress[value] {
+                /* Reset the default appearance */
+                -webkit-appearance: none;
+                appearance: none;
+
+                width: 250px;
+                height: 20px;
+            }
+            progress[value]::-webkit-progress-bar {
+                background-color: #eee;
+                border-radius: 2px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+            }
+        </style>
     </head>
     <body>
         <h1 data-bind="text: title, click: start">DukeScript Progress Bar (click here)</h1>
         <progress max="100" value="0" data-bind="attr:{value: percentage}"></progress>
+        <span data-bind="text: percentage"></span>
     </body>
 </html>
