@@ -11,4 +11,7 @@ Click the image below to see it in action:
 
 For more details, check out [this blog article](https://dukescript.com/best/practices/2016/08/09/big-data.html)
 
+Another option for dealing with large data sets is paging:
 
+
+[DukeScript Paging Demo](https://github.com/dukescript/dukescript-demos/tree/master/paging)

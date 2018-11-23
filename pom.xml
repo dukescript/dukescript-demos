@@ -91,9 +91,10 @@ THE SOFTWARE.
         <module>fifteen</module>
         <module>crud</module>
         <module>twitter</module>
-    <module>match3</module>
+        <module>match3</module>
         <module>progressbar</module>
         <module>bigtable</module>
+        <module>paging</module>
     </modules>
     <build>
         <plugins>
@@ -156,4 +157,11 @@ THE SOFTWARE.
             </plugin>        
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>netbeans</id>
+            <name>NetBeans</name>
+            <url>http://bits.netbeans.org/maven2/</url>
+        </repository>
+    </repositories>
 </project>
