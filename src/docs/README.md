@@ -3,8 +3,6 @@ The original (template) file is in /src/docs/ directory. also make sure to build
 This will update the README.md in root dir.-->
 # DukeScript Demos
 
-[![Travis Status](https://travis-ci.org/dukescript/dukescript-demos.svg?branch=master)](https://travis-ci.org/dukescript/dukescript-demos)
-
 This project contains a collection of demos for using [DukeScript](https://dukescript.com).
 In case you don't know Dukescript yet: It's a framework which allows you to run the same Java application everywhere,
 in the Browser, on your desktop, on iOS or Android, or even as a plugin for your IDE.
@@ -25,6 +23,7 @@ Here are the demos we've collected so far:
 - [Match 3 Game (Candy Crush)](https://github.com/dukescript/dukescript-demos/tree/master/match3)
 - [Twitter Client](https://github.com/dukescript/dukescript-demos/tree/master/twitter)
 - [Progress Bar](https://github.com/dukescript/dukescript-demos/tree/master/progressbar)
+- [Big Table](https://github.com/dukescript/dukescript-demos/tree/master/bigtable)
 
 Currently these versions of dependencies are used:
 
