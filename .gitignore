@@ -25,3 +25,5 @@
 /match3/client-web/target/
 /match3/client-android/target/
 /match3/client-ios/target/
+/bigtable/client/target/
+/bigtable/js/target/

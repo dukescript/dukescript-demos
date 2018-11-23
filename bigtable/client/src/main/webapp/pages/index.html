@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+  #%L
+  dukescript-demos - a library from the "DukeScript" project.
+  %%
+  Copyright (C) 2018 Dukehoff GmbH
+  %%
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  #L%
+-->
+
+<html>
+    <head>
+        <title>Big Table example</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+    <big-table params="value: values"></big-table> 
+    <script type="text/html" id='big-table-template'>
+        <div id="table-container"
+             data-bind = 'scroll: $data'
+             >
+            <div class = 'scroll-dummy' style = 'height: 81vh;' > </div>
+            <table class = 'big-table-table'  style = 'position: absolute; top: 0; left: 0;' >        
+                <thead>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Address</td>
+                        <td>Email</td>
+                        <td>Number</td>
+                        <td>City</td>
+                        <td>Country</td>
+                    </tr>
+                </thead>
+                <tbody data-bind = 'foreach: visibleRows' style="overflow-y: scroll;">
+                    <tr class = 'big-table-row' style = 'height: 50px;' >
+                        <td data-bind = 'text: firstName' ></td>
+                        <td data-bind = 'text: lastName' ></td>
+                        <td data-bind = 'text: address' ></td>
+                        <td data-bind = 'text: email' ></td>
+                        <td data-bind = 'text: number' ></td>
+                        <td data-bind = 'text: city' ></td>
+                        <td data-bind = 'text: country'></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </script>
+
+</body>
+</html>

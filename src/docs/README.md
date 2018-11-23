@@ -22,7 +22,9 @@ Here are the demos we've collected so far:
 - [FXBeanInfo HTML Ui Demo](https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-demo)
 - [CRUD Application](https://github.com/dukescript/dukescript-demos/tree/master/crud)
 - [Fifteen Puzzle Game](https://github.com/dukescript/dukescript-demos/tree/master/fifteen)
+- [Match 3 Game (Candy Crush)](https://github.com/dukescript/dukescript-demos/tree/master/match3)
 - [Twitter Client](https://github.com/dukescript/dukescript-demos/tree/master/twitter)
+- [Progress Bar](https://github.com/dukescript/dukescript-demos/tree/master/progressbar)
 
 Currently these versions of dependencies are used:
 

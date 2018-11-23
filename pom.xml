@@ -93,6 +93,7 @@ THE SOFTWARE.
         <module>twitter</module>
     <module>match3</module>
         <module>progressbar</module>
+        <module>bigtable</module>
     </modules>
     <build>
         <plugins>
