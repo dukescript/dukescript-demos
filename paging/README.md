@@ -1,6 +1,7 @@
 # Paging
 
-This demo shows how to implement paging in DukeScript.
+This demo shows how to implement paging in DukeScript. The change from 
+displaying a standard list is 10 lines of Java code and one line of HTML.
 
 Click the image below to see it in action:
 

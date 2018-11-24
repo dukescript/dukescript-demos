@@ -42,19 +42,14 @@ import net.java.html.json.Property;
 })
 final class DataModel {
 
-    private static Data ui;
-
-    @ComputedProperty
-    public static int pageCount(int pageLength, List<String> list) {
+    @ComputedProperty static int pageCount(int pageLength, List<String> list) {
         return list.size() / pageLength;
     }
 
-    @ComputedProperty
-    public static List<String> currentPage(int currentPageIndex, int pageLength, List<String> list) {
+    @ComputedProperty static List<String> currentPage(int currentPageIndex, int pageLength, List<String> list) {
         int start = (currentPageIndex * pageLength) + 1;
-        int end = start + pageLength;
         if (list.size() > start) {
-            return new ArrayList<String>(list.subList(start, list.size() >= end ? end : list.size()));
+            return new ArrayList<String>(list.subList(start, list.size() >= start + pageLength ? start + pageLength : list.size()));
         }
         return Collections.EMPTY_LIST;
     }
@@ -65,11 +60,10 @@ final class DataModel {
     }
 
     static void onPageLoad() throws Exception {
-        ui = new Data();
+        Data ui = new Data();
         ui.setPageLength(20);
         ui.setCurrentPageIndex(0);
         Models.toRaw(ui);
-
         for (int i = 0; i < 1000; i++) {
             ui.getList().add("Item " + i);
         }
