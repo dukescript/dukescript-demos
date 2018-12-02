@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
 <!--
   #%L
-  DukeScript JavaFX Extensions - a library from the "DukeScript" project.
+  Embedding FXBeaninfo in JavaFX - a library from the "DukeScript" project.
   %%
   Copyright (C) 2018 Dukehoff GmbH
   %%
@@ -23,10 +23,28 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
   #L%
-  -->
-<project-shared-configuration>
-    <properties xmlns="http://www.netbeans.org/ns/maven-properties-data/1">
-        <netbeans.compile.on.save>none</netbeans.compile.on.save>
-        <netbeans.hint.jdkPlatform>JDK_1.8_181</netbeans.hint.jdkPlatform>
-    </properties>
-</project-shared-configuration>
+-->
+
+<html>
+    <head>
+        <title>Todo List</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>     
+        <input data-bind="textInput: input" />
+        <button data-bind="enable: input, click: add">add</button><br>
+        <ul data-bind="foreach: todos" style="list-style: none">
+            <li>
+                <!-- ko ifnot: $root.editing()==$data -->
+                <span data-bind="text: message"></span>
+                (<a href="#" data-bind="click: $root.remove">remove</a>)(<a href="#" data-bind="click: $root.edit">edit</a>)
+                <!-- /ko -->
+                <!-- ko if: $root.editing()==$data -->
+                <form data-bind="submit: $root.stopEditing">
+                    <input data-bind="textInput: message" />
+                </form>
+                <!-- /ko -->
+            </li>
+        </ul>
+    </body>
+</html>

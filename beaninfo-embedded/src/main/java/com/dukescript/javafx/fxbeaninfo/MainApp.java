@@ -35,8 +35,6 @@ import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import net.java.html.boot.fx.FXBrowsers;
-import net.java.html.json.Models;
 
 public class MainApp extends Application {
 
@@ -48,6 +46,9 @@ public class MainApp extends Application {
 
         WebView webview = HTMLLoader.load(getClass().getResource("/html/view.html"), new HTMLController());
         tabPane.getTabs().add(new Tab("HTML",webview));
+
+        WebView webview2 = HTMLLoader.load(getClass().getResource("/html/todo.html"), new TodoListHTMLController());
+        tabPane.getTabs().add(new Tab("Todo",webview2));
 
         Scene scene = new Scene(tabPane);
         scene.getStylesheets().add("/styles/Styles.css");
