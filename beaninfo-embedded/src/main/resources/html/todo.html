@@ -29,22 +29,27 @@
     <head>
         <title>Todo List</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            body{
+                font-size:28px;
+            }
+        </style>
     </head>
     <body>     
-        <input data-bind="textInput: input" />
-        <button data-bind="enable: input, click: add">add</button><br>
-        <ul data-bind="foreach: todos" style="list-style: none">
-            <li>
-                <!-- ko ifnot: $root.editing()==$data -->
-                <span data-bind="text: message"></span>
-                (<a href="#" data-bind="click: $root.remove">remove</a>)(<a href="#" data-bind="click: $root.edit">edit</a>)
-                <!-- /ko -->
-                <!-- ko if: $root.editing()==$data -->
-                <form data-bind="submit: $root.stopEditing">
-                    <input data-bind="textInput: message" />
-                </form>
-                <!-- /ko -->
-            </li>
-        </ul>
+<input data-bind="textInput: input" />
+<button data-bind="enable: input, click: add">add</button><br>
+<ul data-bind="foreach: todos" style="list-style: none">
+    <li>
+        <!-- ko ifnot: $root.editing()==$data -->
+        <span data-bind="text: message"></span>
+        (<a href="#" data-bind="click: $root.remove">remove</a>)(<a href="#" data-bind="click: $root.edit">edit</a>)
+        <!-- /ko -->
+        <!-- ko if: $root.editing()==$data -->
+        <form data-bind="submit: $root.stopEditing">
+            <input data-bind="textInput: message" />
+        </form>
+        <!-- /ko -->
+    </li>
+</ul>
     </body>
 </html>

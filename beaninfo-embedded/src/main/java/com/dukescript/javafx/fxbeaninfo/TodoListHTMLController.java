@@ -67,9 +67,10 @@ import javafx.event.EventHandler;
  */
 public class TodoListHTMLController implements FXBeanInfo.Provider {
 
-    final StringProperty input = new SimpleStringProperty(this, "input", "");
     final ObjectProperty<TodoElement> editing = new SimpleObjectProperty<>(this, "editing");
     final ListProperty<TodoElement> todos = new SimpleListProperty<>(this, "todos", FXCollections.observableArrayList());
+    
+    final StringProperty input = new SimpleStringProperty(this, "input", "");
     final Property<EventHandler<ActionDataEvent>> remove = new SimpleObjectProperty<>(this, "remove");
     final Property<EventHandler<ActionDataEvent>> edit = new SimpleObjectProperty<>(this, "edit");
     final Property<EventHandler<Event>> stopEditing = new SimpleObjectProperty<>(this, "stopEditing");
@@ -115,7 +116,6 @@ public class TodoListHTMLController implements FXBeanInfo.Provider {
             this.info = FXBeanInfo.newBuilder(this).
                     property("message", message).
                     build();
-
         }
 
         @Override

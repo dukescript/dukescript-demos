@@ -59,15 +59,15 @@ import static org.junit.Assert.*;
 
 public class HTMLControllerTest {
 
-    @Test
-    public void hello() {
-        HTMLController controller = new HTMLController();
-        FXBeanInfo fxBeanInfo = controller.getFXBeanInfo();
-        ObservableValue<?> labelText = fxBeanInfo.getProperties().get("labelText");
-        assertEquals("", labelText.getValue());
-        EventHandler<? super ActionDataEvent> action = 
-                fxBeanInfo.getActions().get("action").getValue();
-        action.handle(null);
-        assertEquals("Hello World!", labelText.getValue());
-    }
+@Test
+public void hello() {
+    HTMLController controller = new HTMLController();
+    FXBeanInfo fxBeanInfo = controller.getFXBeanInfo();
+    ObservableValue<?> labelText = fxBeanInfo.getProperties().get("labelText");
+    assertEquals("", labelText.getValue());
+    EventHandler<? super ActionDataEvent> action = 
+            fxBeanInfo.getActions().get("action").getValue();
+    action.handle(null);
+    assertEquals("Hello World!", labelText.getValue());
+}
 }
