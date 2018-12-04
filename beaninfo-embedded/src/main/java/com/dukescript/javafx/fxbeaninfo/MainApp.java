@@ -43,6 +43,10 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         TabPane tabPane = new TabPane();
+
+        Node webview3 = HTMLLoader.load(getClass().getResource("/html/index.html"), new I8HTMLController());
+        tabPane.getTabs().add(new Tab("i8",webview3));
+
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
         tabPane.getTabs().add(new Tab("FXML", parent));
 
@@ -52,12 +56,10 @@ public class MainApp extends Application {
         Node webview2 = HTMLLoader.load(getClass().getResource("/html/todo.html"), new TodoListHTMLController());
         tabPane.getTabs().add(new Tab("Todo",webview2));
 
-        Node webview3 = HTMLLoader.load(getClass().getResource("/html/index.html"), new I8HTMLController());
-        tabPane.getTabs().add(new Tab("i8",webview3));
 
-        Scene scene = new Scene(tabPane);
+        Scene scene = new Scene(tabPane, 1024, 600);
         scene.getStylesheets().add("/styles/Styles.css");
-
+        stage.setFullScreen(true);
         stage.setTitle("JavaFX and DukeScript");
         stage.setScene(scene);
         stage.show();
