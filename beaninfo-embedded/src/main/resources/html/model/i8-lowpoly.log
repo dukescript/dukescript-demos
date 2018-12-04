@@ -1,0 +1,325 @@
+Exporter version: 5.2.0, Blender version: 2.78 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used:
+		selected layers only:  false
+		flat shading entire scene:  false
+		inline textures:  false
+		texture directory:  /Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/
+	Python World class constructor completed
+	processing begun of mesh:  pol_pivot
+		processing begun of Standard material:  _3___Default
+		num positions      :  14565
+		num normals        :  14565
+		num uvs            :  29130
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  83097
+	processing begun of mesh:  salon_elave_pivot
+		processing begun of Standard material:  wireframe_color_0x565656
+		num positions      :  23821
+		num normals        :  23821
+		num uvs            :  47642
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  71718
+	processing begun of mesh:  Object07_pivot
+		processing begun of Standard material:  _7___Default
+			Diffuse texture found "Kd.009"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/tormoz_disk.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/tormoz_disk.tga' are the same file
+		num positions      :  1337
+		num normals        :  1337
+		num uvs            :  2674
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  2328
+	processing begun of mesh:  fara_pered_st_pivot
+		processing begun of Standard material:  _6___Default0
+		num positions      :  1024
+		num normals        :  1024
+		num uvs            :  2048
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  5568
+	processing begun of mesh:  Object06_pivot
+		registered as also a user of material:  _7___Default
+		num positions      :  1337
+		num normals        :  1337
+		num uvs            :  2674
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  2328
+	processing begun of mesh:  fara_zad_st_pivot
+		processing begun of Standard material:  _9___Default
+		num positions      :  5303
+		num normals        :  5303
+		num uvs            :  10606
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  17856
+	processing begun of mesh:  Object04_pivot
+		processing begun of Standard material:  Material__91
+			Diffuse texture found "Kd.003"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/logo.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/logo.tga' are the same file
+		processing begun of Standard material:  Material__102
+		processing begun of Standard material:  Material__89
+		processing begun of Standard material:  Material__90
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#0
+		num positions      :  30837
+		num normals        :  30837
+		num uvs            :  61674
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  161772
+	processing begun of mesh:  dam_pivot
+		processing begun of Standard material:  _8___Default1
+		processing begun of Standard material:  Material__34
+		processing begun of Standard material:  Material__122
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#1
+		num positions      :  24632
+		num normals        :  24632
+		num uvs            :  49264
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  128808
+	processing begun of mesh:  seats_pered_pivot
+		processing begun of Standard material:  Material__104
+		processing begun of Standard material:  Material__105
+		processing begun of Standard material:  Material__106
+		processing begun of Standard material:  Material__103
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#2
+		num positions      :  39357
+		num normals        :  39357
+		num uvs            :  78714
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  155736
+	processing begun of mesh:  dno_pivot
+		processing begun of Standard material:  _1___Default
+		num positions      :  7970
+		num normals        :  7970
+		num uvs            :  15940
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  31248
+	processing begun of mesh:  rul_pivot
+		processing begun of Standard material:  Material__129
+		processing begun of Standard material:  Material__126
+		processing begun of Standard material:  Material__130
+		processing begun of Standard material:  Material__128
+			Diffuse texture found "Kd.001"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/salon_tex.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/salon_tex.tga' are the same file
+		processing begun of Standard material:  Material__127
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#3
+		num positions      :  21841
+		num normals        :  21841
+		num uvs            :  43682
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  91644
+	processing begun of mesh:  Object08_pivot
+		registered as also a user of material:  _7___Default
+		num positions      :  1337
+		num normals        :  1337
+		num uvs            :  2674
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  2328
+	processing begun of mesh:  salon_pivot
+		processing begun of Standard material:  Material__114
+		processing begun of Standard material:  Material__125
+		processing begun of Standard material:  Material__115
+			Diffuse texture found "Kd"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/salon_tex.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/salon_tex.tga' are the same file
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#4
+		WARNING: Due to multi-materials / Shapekeys & this meshes size, 32bit indices must be used.  This may not run on all hardware.
+		num positions      :  76356
+		num normals        :  76356
+		num uvs            :  152712
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  238662
+		WARNING: # of 0 area faces found:  16
+	processing begun of mesh:  chassis_pivot
+		processing begun of Standard material:  _8___Default0
+		processing begun of Standard material:  Material__1
+		processing begun of Standard material:  Material__121
+		processing begun of Standard material:  chrome
+		processing begun of Standard material:  Material__3
+			Diffuse texture found "Kd.008"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/logo.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/logo.tga' are the same file
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#5
+		num positions      :  49753
+		num normals        :  49753
+		num uvs            :  99506
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  231426
+	processing begun of mesh:  Object03_pivot
+		registered as also a user of material:  Material__91
+		registered as also a user of material:  Material__102
+		registered as also a user of material:  Material__89
+		registered as also a user of material:  Material__90
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#6
+		num positions      :  30837
+		num normals        :  30837
+		num uvs            :  61674
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  161772
+	processing begun of mesh:  seats_rear_pivot
+		registered as also a user of material:  Material__104
+		registered as also a user of material:  Material__105
+		registered as also a user of material:  Material__106
+		registered as also a user of material:  Material__103
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#7
+		num positions      :  15971
+		num normals        :  15971
+		num uvs            :  31942
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  77040
+	processing begun of mesh:  Object05_pivot
+		registered as also a user of material:  _7___Default
+		num positions      :  1337
+		num normals        :  1337
+		num uvs            :  2674
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  2328
+	processing begun of mesh:  boot_st_pivot
+		processing begun of Standard material:  _4___Default0
+		num positions      :  461
+		num normals        :  461
+		num uvs            :  922
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  2496
+	processing begun of mesh:  Object02
+		registered as also a user of material:  Material__91
+		registered as also a user of material:  Material__102
+		registered as also a user of material:  Material__89
+		registered as also a user of material:  Material__90
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#8
+		num positions      :  30837
+		num normals        :  30837
+		num uvs            :  61674
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  161772
+	processing begun of mesh:  fara_zad_pivot
+		processing begun of Standard material:  Material__77
+		processing begun of Standard material:  Material__78
+			Diffuse texture found "Kd.004"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/lights.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/lights.tga' are the same file
+		processing begun of Standard material:  Material__88
+			Diffuse texture found "Kd.005"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/lights.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/lights.tga' are the same file
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#9
+		num positions      :  17663
+		num normals        :  17663
+		num uvs            :  35326
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  98652
+	processing begun of mesh:  Object01_pivot
+		registered as also a user of material:  Material__91
+		registered as also a user of material:  Material__102
+		registered as also a user of material:  Material__89
+		registered as also a user of material:  Material__90
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#10
+		num positions      :  30837
+		num normals        :  30837
+		num uvs            :  61674
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  161772
+	processing begun of mesh:  windscreen_ok_pivot
+		registered as also a user of material:  _4___Default0
+		num positions      :  389
+		num normals        :  389
+		num uvs            :  778
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  1932
+	processing begun of mesh:  fara_pered_pivot
+		processing begun of Standard material:  Material__59
+		processing begun of Standard material:  Material__62
+		processing begun of Standard material:  Material__48
+			Diffuse texture found "Kd.002"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/lights.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/lights.tga' are the same file
+		processing begun of Standard material:  Material__49
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#11
+		num positions      :  10829
+		num normals        :  10829
+		num uvs            :  21658
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  58872
+	processing begun of mesh:  door_rf_ok01_pivot
+		processing begun of Standard material:  Material__40
+		processing begun of Standard material:  Material__120
+		processing begun of Standard material:  Material__41
+			Diffuse texture found "Kd.007"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/vehiclelights128.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/vehiclelights128.tga' are the same file
+		processing begun of Standard material:  _4___Default1
+		processing begun of Standard material:  chrome0
+		processing begun of Standard material:  Material__39
+		processing begun of Standard material:  _8___Default
+		processing begun of Standard material:  Material__38
+			Diffuse texture found "Kd.006"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/salon_tex.tga' and '/Users/antonepple/Documents/Projekte/gigatronik/babylon-tests/public_html/BMW_i8/salon_tex.tga' are the same file
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#12
+		num positions      :  28423
+		num normals        :  28423
+		num uvs            :  56846
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  102168
+	processing begun of mesh:  boot_ok_pivot
+		processing begun of Standard material:  Material__12
+		num positions      :  3549
+		num normals        :  3549
+		num uvs            :  7098
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  19416
+	processing begun of mesh:  reshotka_pivot
+		registered as also a user of material:  chrome
+		num positions      :  1610
+		num normals        :  1610
+		num uvs            :  3220
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  8640
+	processing begun of mesh:  door_rf_ok_pivot
+		registered as also a user of material:  Material__40
+		registered as also a user of material:  Material__120
+		registered as also a user of material:  Material__41
+		registered as also a user of material:  _4___Default1
+		registered as also a user of material:  chrome0
+		registered as also a user of material:  Material__39
+		registered as also a user of material:  _8___Default
+		registered as also a user of material:  Material__38
+		processing begun of multimaterial:  i8_lowpoly.Multimaterial#13
+		num positions      :  28423
+		num normals        :  28423
+		num uvs            :  56846
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  102168
+	processing begun of camera (FreeCamera):  Camera
+	processing begun of light (POINT):  Lamp
+========= Writing of scene file started =========
+========= Writing of scene file completed =========
+========= end of processing =========
+elapsed time:  1 min, 21.9786 secs

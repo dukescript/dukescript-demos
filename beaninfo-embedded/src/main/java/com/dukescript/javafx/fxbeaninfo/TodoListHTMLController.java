@@ -50,6 +50,9 @@ package com.dukescript.javafx.fxbeaninfo;
  */
 import com.dukescript.api.javafx.beans.ActionDataEvent;
 import com.dukescript.api.javafx.beans.FXBeanInfo;
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.BooleanBinding;
+import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.Property;
@@ -57,6 +60,7 @@ import javafx.beans.property.SimpleListProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -68,6 +72,9 @@ import javafx.event.EventHandler;
 public class TodoListHTMLController implements FXBeanInfo.Provider {
 
     final StringProperty input = new SimpleStringProperty(this, "input", "");
+    final BooleanBinding addEnabled = Bindings.createBooleanBinding(() -> {
+        return input.get() != null & input.get().length() > 3; //To change body of generated lambdas, choose Tools | Templates.
+    }, input);
     final ObjectProperty<TodoElement> editing = new SimpleObjectProperty<>(this, "editing");
     final ListProperty<TodoElement> todos = new SimpleListProperty<>(this, "todos", FXCollections.observableArrayList());
     final Property<EventHandler<ActionDataEvent>> remove = new SimpleObjectProperty<>(this, "remove");
@@ -77,6 +84,7 @@ public class TodoListHTMLController implements FXBeanInfo.Provider {
 
     final FXBeanInfo info = FXBeanInfo.newBuilder(this).
             property(input).
+            property("addEnabled", addEnabled).
             property(editing).
             property(todos).
             action(remove).
@@ -93,11 +101,11 @@ public class TodoListHTMLController implements FXBeanInfo.Provider {
             todos.get().remove(toRemove);
         }
         );
-        edit.setValue((event)-> {
+        edit.setValue((event) -> {
             TodoElement source = event.getSource(TodoElement.class);
             editing.setValue(source);
         });
-        stopEditing.setValue(e -> editing.setValue(null) );
+        stopEditing.setValue(e -> editing.setValue(null));
     }
 
     @Override

@@ -1,0 +1,778 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 6.3 x64 6.3.5.8307
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Material__114
+Ka 0.658824 0.658824 0.658824
+Kd 0.658824 0.658824 0.658824
+Ks 0.9 0.9 0.9
+illum 2
+Ns 13.9288
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__115
+Ka 0.588 0.588 0.588
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 11.3137
+map_Kd salon_tex.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__125
+Ka 0.658824 0.658824 0.658824
+Kd 0.658824 0.658824 0.658824
+Ks 0.9 0.9 0.9
+illum 2
+Ns 13.9288
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Explorer_Default
+Ka 0.117647 0.117647 0.117647
+Kd 0.752941 0.752941 0.752941
+Ks 0.752941 0.752941 0.752941
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl wireframe_color_0x565656
+Ka 0.117647 0.117647 0.117647
+Kd 0.337255 0.337255 0.337255
+Ks 0.752941 0.752941 0.752941
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _3___Default
+Ka 0.34902 0.34902 0.34902
+Kd 0.34902 0.34902 0.34902
+Ks 0.9 0.9 0.9
+illum 2
+Ns 128
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _1___Default
+Ka 0.27451 0.27451 0.27451
+Kd 0.27451 0.27451 0.27451
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__103
+Ka 0.235294 0.235294 0.235294
+Kd 0.235294 0.235294 0.235294
+Ks 0.9 0.9 0.9
+illum 2
+Ns 19.6983
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__104
+Ka 0.584314 0.584314 0.584314
+Kd 0.584314 0.584314 0.584314
+Ks 0.9 0.9 0.9
+illum 2
+Ns 14.9285
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__105
+Ka 0.301961 0.301961 0.301961
+Kd 0.301961 0.301961 0.301961
+Ks 0.9 0.9 0.9
+illum 2
+Ns 19.6983
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__106
+Ka 0.0784314 0.0784314 0.0784314
+Kd 0.0784314 0.0784314 0.0784314
+Ks 0.9 0.9 0.9
+illum 2
+Ns 14.9285
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__126
+Ka 0.396078 0.396078 0.396078
+Kd 0.396078 0.396078 0.396078
+Ks 0.9 0.9 0.9
+illum 2
+Ns 13.9288
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__127
+Ka 0.784314 0.784314 0.784314
+Kd 0.784314 0.784314 0.784314
+Ks 0.9 0.9 0.9
+illum 2
+Ns 19.6983
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__128
+Ka 0.368627 0.368627 0.368627
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 8
+map_Kd salon_tex.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__129
+Ka 0.196078 0.196078 0.196078
+Kd 0.196078 0.196078 0.196078
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__130
+Ka 0.588 0.588 0.588
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _4___Default0
+Ka 0.0705882 0.294118 0.266667
+Kd 0.0705882 0.294118 0.266667
+Ks 0.9 0.9 0.9
+illum 2
+Ns 25.9921
+d 0.39
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _6___Default0
+Ka 0.192157 0.192157 0.192157
+Kd 0.192157 0.192157 0.192157
+Ks 0.9 0.9 0.9
+illum 2
+Ns 21.1121
+d 0.38
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl chrome
+Ka 0.235294 0.235294 0.235294
+Kd 0.235294 0.235294 0.235294
+Ks 0.9 0.9 0.9
+illum 2
+Ns 14.9285
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__59
+Ka 0.0823529 0.0823529 0.0823529
+Kd 0.380392 0.380392 0.380392
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__62
+Ka 0.0823529 0.0823529 0.0823529
+Kd 0.380392 0.380392 0.380392
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__48
+Ka 0.588 0.588 0.588
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 17.1484
+map_Kd lights.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__49
+Ka 0.784314 0.784314 0.784314
+Kd 0.784314 0.784314 0.784314
+Ks 0.9 0.9 0.9
+illum 2
+Ns 27.8576
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__90
+Ka 0.662745 0.662745 0.662745
+Kd 0.662745 0.662745 0.662745
+Ks 0.9 0.9 0.9
+illum 2
+Ns 16
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__102
+Ka 0.0823529 0.0823529 0.0823529
+Kd 0.0392157 0.0392157 0.0392157
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__89
+Ka 0.156863 0.156863 0.156863
+Kd 0.156863 0.156863 0.156863
+Ks 0.9 0.9 0.9
+illum 2
+Ns 16
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__91
+Ka 0.588 0.588 0.588
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd logo.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__12
+Ka 0.0823529 0.0823529 0.0823529
+Kd 0.0392157 0.0392157 0.0392157
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__77
+Ka 0.435294 0.0392157 0.0392157
+Kd 0.435294 0.0392157 0.0392157
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__78
+Ka 0.588 0.588 0.588
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd lights.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__88
+Ka 0.588 0.588 0.588
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd lights.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _9___Default
+Ka 0.435294 0.0392157 0.0392157
+Kd 0.435294 0.0392157 0.0392157
+Ks 0.9 0.9 0.9
+illum 2
+Ns 34.2967
+d 0.63
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__120
+Ka 0.431373 0.431373 0.431373
+Kd 0.894118 0.894118 0.894118
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _8___Default
+Ka 0.0823529 0.0823529 0.0823529
+Kd 0.0392157 0.0392157 0.0392157
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl chrome0
+Ka 0.235294 0.235294 0.235294
+Kd 0.235294 0.235294 0.235294
+Ks 0.9 0.9 0.9
+illum 2
+Ns 14.9285
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__38
+Ka 0.588 0.588 0.588
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd salon_tex.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__39
+Ka 0.223529 0.223529 0.223529
+Kd 0.223529 0.223529 0.223529
+Ks 0.9 0.9 0.9
+illum 2
+Ns 9.18959
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__40
+Ka 0.498039 0.498039 0.498039
+Kd 0.498039 0.498039 0.498039
+Ks 0.9 0.9 0.9
+illum 2
+Ns 24.2515
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__41
+Ka 0.588 0.588 0.588
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 73.5167
+map_Kd vehiclelights128.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _4___Default1
+Ka 0.0705882 0.294118 0.266667
+Kd 0.0705882 0.294118 0.266667
+Ks 0.9 0.9 0.9
+illum 2
+Ns 25.9921
+d 0.39
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__121
+Ka 0.431373 0.431373 0.431373
+Kd 0.894118 0.894118 0.894118
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__1
+Ka 0.196078 0.196078 0.196078
+Kd 0.196078 0.196078 0.196078
+Ks 0.9 0.9 0.9
+illum 2
+Ns 34.2967
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__3
+Ka 0.588 0.588 0.588
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 90.5097
+map_Kd logo.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _8___Default0
+Ka 0.0823529 0.0823529 0.0823529
+Kd 0.0392157 0.0392157 0.0392157
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__122
+Ka 0.431373 0.431373 0.431373
+Kd 0.894118 0.894118 0.894118
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _8___Default1
+Ka 0.0823529 0.0823529 0.0823529
+Kd 0.0392157 0.0392157 0.0392157
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__34
+Ka 0.431373 0.431373 0.431373
+Kd 0.0313726 0.396078 0.658824
+Ks 1 1 1
+illum 2
+Ns 2048
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl _7___Default
+Ka 0.588235 0.588235 0.588235
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 16
+map_Kd tormoz_disk.tga
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

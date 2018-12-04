@@ -32,7 +32,7 @@
     </head>
     <body>     
         <input data-bind="textInput: input" />
-        <button data-bind="enable: input, click: add">add</button><br>
+        <button data-bind="enable: addEnabled, click: add">add</button><br>
         <ul data-bind="foreach: todos" style="list-style: none">
             <li>
                 <!-- ko ifnot: $root.editing()==$data -->

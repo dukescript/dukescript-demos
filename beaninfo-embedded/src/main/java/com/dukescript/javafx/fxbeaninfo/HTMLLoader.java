@@ -27,27 +27,29 @@
 package com.dukescript.javafx.fxbeaninfo;
 
 import com.dukescript.api.javafx.beans.FXBeanInfo;
+import com.dukescript.presenters.jxbrowser.JXBrowserPresenter;
 import java.net.URL;
+import javafx.scene.Node;
 import javafx.scene.web.WebView;
-import net.java.html.boot.fx.FXBrowsers;
 import net.java.html.json.Models;
-
 
 /**
  *
  * @author antonepple
  */
 public class HTMLLoader {
-    
-    public static WebView load(URL html, final FXBeanInfo.Provider viewModel){
-        WebView webView = new WebView();
-        FXBrowsers.load(webView, html, new Runnable() {
+
+    public static Node load(URL html, final FXBeanInfo.Provider viewModel) {
+        JXBrowserPresenter presenter = JXBrowserPresenter.create(Node.class);
+
+        final Node browser = presenter.getComponent(Node.class);
+
+        presenter.displayPage(html,  new Runnable() {
             @Override
             public void run() {
                 Models.applyBindings(viewModel);
             }
         });
-        return webView;
+        return browser;
     }
-    
 }

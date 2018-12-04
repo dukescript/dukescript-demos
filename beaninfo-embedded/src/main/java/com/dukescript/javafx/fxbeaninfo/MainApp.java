@@ -26,14 +26,16 @@ package com.dukescript.javafx.fxbeaninfo;
  * #L%
  */
 
+import com.teamdev.jxbrowser.chromium.BrowserCore;
+import com.teamdev.jxbrowser.chromium.internal.Environment;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
-import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
@@ -44,11 +46,14 @@ public class MainApp extends Application {
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
         tabPane.getTabs().add(new Tab("FXML", parent));
 
-        WebView webview = HTMLLoader.load(getClass().getResource("/html/view.html"), new HTMLController());
+        Node webview = HTMLLoader.load(getClass().getResource("/html/view.html"), new HTMLController());
         tabPane.getTabs().add(new Tab("HTML",webview));
 
-        WebView webview2 = HTMLLoader.load(getClass().getResource("/html/todo.html"), new TodoListHTMLController());
+        Node webview2 = HTMLLoader.load(getClass().getResource("/html/todo.html"), new TodoListHTMLController());
         tabPane.getTabs().add(new Tab("Todo",webview2));
+
+        Node webview3 = HTMLLoader.load(getClass().getResource("/html/index.html"), new I8HTMLController());
+        tabPane.getTabs().add(new Tab("i8",webview3));
 
         Scene scene = new Scene(tabPane);
         scene.getStylesheets().add("/styles/Styles.css");
@@ -57,7 +62,14 @@ public class MainApp extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
+    
+    @Override
+    public void init() throws Exception {
+        // On Mac OS X Chromium engine must be initialized in non-UI thread.
+        if (Environment.isMac()) {
+            BrowserCore.initialize();
+        }
+    }
     public static void main(String[] args) {
         launch(args);
     }
