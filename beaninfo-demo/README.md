@@ -14,7 +14,9 @@ about the library:
 - [JavaDoc](https://dukescript.com/javadoc/javafx/)
 
 
-In this demo we use a plain HTML UI. There's a related demo which shows how to 
+In this demo we use a plain HTML UI. It is built on the sample code we use in our 
+DukeScript Maven Archetype to illustrate how this API compares to "classic" DukeScript [@Model](https://dukescript.com/javadoc/html+java/1.6/net/java/html/json/Model.html).
+There's a related demo which shows how to 
 mix JavaFX and DukeScript based Views:
 
 https://github.com/dukescript/dukescript-demos/tree/master/beaninfo-embedded
