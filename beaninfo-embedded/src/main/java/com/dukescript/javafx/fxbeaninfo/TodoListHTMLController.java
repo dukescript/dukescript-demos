@@ -58,6 +58,7 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 
@@ -69,10 +70,8 @@ public class TodoListHTMLController implements FXBeanInfo.Provider {
 
     final ObjectProperty<TodoElement> editing = new SimpleObjectProperty<>(this, "editing");
     final ListProperty<TodoElement> todos = new SimpleListProperty<>(this, "todos", FXCollections.observableArrayList());
-    
+
     final StringProperty input = new SimpleStringProperty(this, "input", "");
-    final Property<EventHandler<ActionDataEvent>> remove = new SimpleObjectProperty<>(this, "remove");
-    final Property<EventHandler<ActionDataEvent>> edit = new SimpleObjectProperty<>(this, "edit");
     final Property<EventHandler<Event>> stopEditing = new SimpleObjectProperty<>(this, "stopEditing");
     final Property<EventHandler<Event>> add = new SimpleObjectProperty<>(this, "add");
 
@@ -80,25 +79,32 @@ public class TodoListHTMLController implements FXBeanInfo.Provider {
             property(input).
             property(editing).
             property(todos).
-            action(remove).
-            action(add).
-            action(edit).
-            action(stopEditing).
+            action("remove", this::removeTodo).
+            action("add", this::addTodo).
+            action("edit", this::editTodo).
+            action("stopEditing", this::stopEditing).
             build();
+
+    public void removeTodo(ActionDataEvent event) {
+        TodoElement toRemove = event.getSource(TodoElement.class);
+        todos.get().remove(toRemove);
+    }
+
+    public void addTodo() {
+        todos.add(new TodoElement(input.get()));
+    }
+
+    public void stopEditing() {
+        editing.setValue(null);
+    }
+
+    public void editTodo(ActionDataEvent event) {
+        TodoElement source = event.getSource(TodoElement.class);
+        editing.setValue(source);
+    }
 
     public TodoListHTMLController() {
         todos.add(new TodoElement("Buy milk!"));
-        add.setValue(e -> todos.add(new TodoElement(input.get())));
-        remove.setValue((event) -> {
-            TodoElement toRemove = event.getSource(TodoElement.class);
-            todos.get().remove(toRemove);
-        }
-        );
-        edit.setValue((event)-> {
-            TodoElement source = event.getSource(TodoElement.class);
-            editing.setValue(source);
-        });
-        stopEditing.setValue(e -> editing.setValue(null) );
     }
 
     @Override
