@@ -53,23 +53,23 @@ The HTMLController looks like this:
 ```java
 public class HTMLController implements FXBeanInfo.Provider {
 
-    private final StringProperty labelText = new SimpleStringProperty(this, "labelText", "");
-    private final Property<EventHandler<ActionEvent>> action =
-            new SimpleObjectProperty<EventHandler<ActionEvent>>(
-                    this, "action",
-                    (e) -> labelText.set("Hello World!"));
+    private final StringProperty labelText
+            = new SimpleStringProperty(this, "labelText", "");
+    
+    public void buttonClick(){
+        labelText.setValue("You clicked me!");
+    }
     
     private final FXBeanInfo info = FXBeanInfo
-            .create(this)
-            .action(action)
+            .newBuilder(this)
+            .action("action", this::buttonClick)
             .property(labelText)
             .build();
-    
+
     @Override
     public FXBeanInfo getFXBeanInfo() {
         return info;
     }
-
 }
 ```
 

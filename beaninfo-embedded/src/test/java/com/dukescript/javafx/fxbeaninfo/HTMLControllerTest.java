@@ -68,6 +68,6 @@ public void hello() {
     EventHandler<? super ActionDataEvent> action = 
             fxBeanInfo.getActions().get("action").getValue();
     action.handle(null);
-    assertEquals("Hello World!", labelText.getValue());
+    assertEquals("You clicked me!", labelText.getValue());
 }
 }
