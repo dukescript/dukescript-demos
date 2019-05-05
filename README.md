@@ -30,13 +30,13 @@ Currently these versions of dependencies are used:
 
 - org.netbeans.html:net.java.html : 1.5.1
 - org.apidesign.bck2brwsr:emul : 0.30
-- com.dukescript.api:javafx.beaninfo : 0.3
+- com.dukescript.api:javafx.beaninfo : 0.4
 - com.dukescript.api:junit-browser-runner : 1.0
 - com.dukescript.canvas:canvas-api : 0.11
 - com.dukescript.api:charts : 0.9
 - com.dukescript.api:leaflet4j : 0.7.7
 - com.dukescript.presenters (android, browser, ios, etc.) : 1.5.2
-- com.dukescript.api:javafx.beaninfo  : 0.3
+- com.dukescript.api:javafx.beaninfo  : 0.4
 - com.simpligility.maven.plugins:android-maven-plugin : 4.1.1.4
 - Android Plugin version: 4.5.0
 - net.orfjackal.retrolambda:retrolambda-maven-plugin : 2.5.5

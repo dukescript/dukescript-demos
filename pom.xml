@@ -73,7 +73,7 @@ THE SOFTWARE.
         <jersey.version>2.13</jersey.version>
         <presenters.version>1.5.2</presenters.version>
         <enforcer.fail>false</enforcer.fail>
-        <javafx.beaninfo.version>0.3</javafx.beaninfo.version>
+        <javafx.beaninfo.version>0.4</javafx.beaninfo.version>
         <platform.version>4.1.1.4</platform.version>
         <presenters.version>1.5.2</presenters.version>
         <android.plugin.version>4.5.0</android.plugin.version>
