@@ -1,5 +1,6 @@
 language: android
 jdk: oraclejdk8
+osx_image: xcode9
 android:
     components:
     - build-tools-26.0.2
