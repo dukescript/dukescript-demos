@@ -81,7 +81,7 @@ final class DataModel implements FXBeanInfo.Provider {
         }
     }
 
-    final FXBeanInfo info = FXBeanInfo.create(this).
+    final FXBeanInfo info = FXBeanInfo.newBuilder(this).
             property(message).
             property(rotating).
             property("words", words).
@@ -130,7 +130,7 @@ final class DataModel implements FXBeanInfo.Provider {
 
         HistoryElement(String message) {
             this.message = message;
-            this.info = FXBeanInfo.create(this).
+            this.info = FXBeanInfo.newBuilder(this).
                     constant("message", message).
                     build();
         }
