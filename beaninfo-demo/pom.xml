@@ -47,13 +47,6 @@ THE SOFTWARE.
         <exec.debug.arg>-Ddebug=false</exec.debug.arg>
         <main.basedir>${project.parent.basedir}</main.basedir>
     </properties>
-    <repositories>
-        <repository>
-            <id>netbeans</id>
-            <name>NetBeans</name>
-            <url>http://bits.netbeans.org/maven2/</url>
-        </repository>
-    </repositories>
     <build>
         <plugins>
             <plugin>
@@ -209,7 +202,7 @@ THE SOFTWARE.
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-util-lookup</artifactId>
-            <version>RELEASE82</version>
+            <version>RELEASE113</version>
             <scope>provided</scope>
         </dependency>
 
